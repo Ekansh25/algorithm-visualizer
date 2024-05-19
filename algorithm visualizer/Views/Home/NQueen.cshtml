@@ -1,0 +1,34 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/NQueen.css" type="text/css" />
+</head>
+<body>
+
+
+    <div class="border_box">
+        <div class="styled-input-container">
+            <input type="text" id="styledInput" placeholder="Type something..." onkeypress="handleKeyPress(event)">
+        </div>
+        <button id="playPauseButton" onclick="togglePlayPause()">
+            <span id="playPauseIcon">&#9658;</span> <!-- Unicode for "play" icon -->
+            <span id="playPauseText">Play</span>
+        </button>
+        <div id="chessboard"></div>
+    </div>
+    @* <div class="array_box"></div> *@
+
+
+    <div class="console_box"></div>
+    <script src="~/js/NQueen.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,135 @@
+﻿body, html {
+    height: 100%;
+    margin: 0px;
+    /* overflow: hidden; */
+}
+/* Bar Graph css */
+.bar {
+    display: inline-block;
+    width: 25px;
+    margin-right: 10px;
+    background-color: #a8a8a8;
+}
+
+
+    .bar:hover::before {
+        content: attr(data-tooltip); /* Use attr(data-tooltip) to get the value from the data-tooltip attribute */
+        display: block;
+        position: absolute;
+        transform: translate(0%, -130%); /* Center the tooltip horizontally */
+        background-color: #333;
+        color: #fff;
+        padding: 5px;
+        border-radius: 3px;
+        transition: transform 0.3s;
+    }
+
+.border_box {
+    box-sizing: border-box;
+    width: 100%;
+    height: 48%;
+    border: solid #5B6DCD 0px;
+    padding: 5px 15px;
+    background-color: #242424;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    justify-content: center;
+}
+
+.array_box {
+    box-sizing: border-box;
+    width: 100%;
+    border: solid red 0px;
+    padding: 5px 15px;
+    background-color: #242424;
+    display: flex;
+    justify-content: center;
+}
+
+.array_ele {
+    display: inline-block;
+    width: 25px;
+    margin-right: 10px;
+    text-align: center;
+    color: #a8a8a8;
+}
+
+/* button css */
+#playPauseButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #3498db;
+    color: #fff;
+    width: 100px;
+    height: 40px;
+}
+
+#playPauseButton:hover {
+    background-color: #2980b9;
+}
+
+#playPauseIcon {
+    margin-right: 10px;
+}
+
+/* Console css */
+.console_box {
+    box-sizing: border-box;
+    width: 100%;
+    height: 48%;
+    border-top: solid #a8a8a8 2px;
+    padding: 10px 15px;
+    background-color: #242424;
+    line-height: 2rem;
+    overflow: auto;
+}
+
+.console_log {
+    color: #ffffff;
+    /* padding-left: 15px; */
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
+
+
+
+
+.styled-input-container {
+    position: absolute;
+    top: 10%; /* Center the input vertically */
+    left: 50%; /* Center the input horizontally */
+    transform: translate(-50%, -50%);
+}
+
+    .styled-input-container input {
+        width: 300px;
+        padding: 10px;
+        border: 2px solid #3498db;
+        border-radius: 5px;
+        outline: none;
+        font-size: 16px;
+        transition: border-color 0.3s ease-in-out;
+        background-color: #a8a8a8;
+        border-color: #a8a8a8;
+        
+    }
+
+.styled-input-container input:focus {
+    border-color: black;
+}
+
